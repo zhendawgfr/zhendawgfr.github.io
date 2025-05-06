@@ -30,27 +30,58 @@ nav a {
 }
 
 nav a:hover {
-	color: #ff9800;
+	color: #D32F2F;
+	/* Rouge du logo pour l'accentuation */
 }
 
 .hero {
-	background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Designer2.jpeg') center/cover no-repeat;
 	color: #fff;
 	padding: 100px 20px 60px 20px;
 	text-align: center;
 	border-radius: 0 0 32px 32px;
 	box-shadow: 0 4px 24px rgba(0, 188, 212, 0.08);
+	position: relative; /* Ajouté pour le positionnement du contenu si nécessaire */
 }
 
 .hero h1 {
-	font-size: 2.5rem;
-	margin-bottom: 16px;
-	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	font-size: 2.8rem; /* Légèrement augmenté pour plus d'impact */
+	margin-bottom: 20px; /* Augmenté l'espace */
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7); /* Ombre portée plus forte */
+	font-weight: bold;
 }
 
 .hero p {
-	font-size: 1.3rem;
-	margin-bottom: 0;
+	font-size: 1.4rem; /* Légèrement augmenté */
+	margin-bottom: 24px; /* Ajouté pour espacer du bouton téléphone */
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); /* Ombre portée plus forte */
+	line-height: 1.6;
+}
+
+.hero-phone {
+	display: inline-block;
+	margin-top: 32px;
+	background: rgba(0, 0, 0, 0.55);
+	color: #fff;
+	padding: 12px 28px;
+	border-radius: 32px;
+	font-size: 1.35rem;
+	font-weight: bold;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+	letter-spacing: 1px;
+	text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.hero-phone a {
+	color: #ffeb3b;
+	text-decoration: none;
+	font-weight: bold;
+	transition: color 0.2s;
+}
+
+.hero-phone a:hover {
+	color: #fff176;
+	text-decoration: underline;
 }
 
 section {
@@ -170,5 +201,10 @@ footer {
 
 	.logo-slogan {
 		font-size: 0.8rem;
+	}
+
+	.hero-phone {
+		font-size: 1rem;
+		padding: 8px 12px;
 	}
 }
