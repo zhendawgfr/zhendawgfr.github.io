@@ -98,6 +98,43 @@ footer {
 	border-radius: 32px 32px 0 0;
 }
 
+.logo-block {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+}
+
+.logo-img {
+	height: 60px;
+	width: auto;
+	border-radius: 12px;
+	box-shadow: 0 2px 8px rgba(0, 188, 212, 0.15);
+	background: #fff;
+	padding: 4px;
+}
+
+.logo-text {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.logo-title {
+	font-size: 1.7rem;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #fff;
+	line-height: 1.1;
+}
+
+.logo-slogan {
+	font-size: 0.95rem;
+	color: #e0f7fa;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-top: 2px;
+}
+
 @media (max-width: 600px) {
 	header {
 		flex-direction: column;
@@ -115,5 +152,23 @@ footer {
 	section {
 		margin: 32px auto;
 		padding: 0 8px;
+	}
+
+	.logo-block {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 6px;
+	}
+
+	.logo-img {
+		height: 44px;
+	}
+
+	.logo-title {
+		font-size: 1.2rem;
+	}
+
+	.logo-slogan {
+		font-size: 0.8rem;
 	}
 }
